@@ -1,0 +1,8 @@
+            <div class="training-container container-block">
+                <h2 class="container-block-title">{{ .Site.Params.training.title }}</h2>
+                <ul class="list-unstyled contact-list">
+				{{ range .Site.Params.training.list }}
+                    <li class="{{ .class }}"><i class="fa {{ .icon }}"></i><a href="{{ .url }}">{{ .title }}</a></li>
+				{{ end }}
+                </ul>
+            </div><!--//training-container-->
